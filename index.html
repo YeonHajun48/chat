@@ -1503,6 +1503,89 @@
                             </div>
                         </div>
                     </div>
+
+                    <p class="cs-group-label" style="margin-top:4px;">邀请音效</p>
+                    <div class="cs-card">
+                        <div class="cs-sound-inner" style="padding-top:10px;">
+                            <div style="padding-top:0;display:flex;flex-direction:column;gap:12px;">
+                                <div>
+                                    <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">陪我学习邀请音效</div>
+                                    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                                        <select id="sound-invite-study-preset" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;font-family:var(--font-family);">
+                                            <option value="mute">无音效</option>
+                                            <option value="default">内置音效</option>
+                                        </select>
+                                        <button id="test-sound-invite-study-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;"><i class="fas fa-play"></i> 试听</button>
+                                    </div>
+                                    <div style="display:flex;gap:6px;align-items:center;">
+                                        <input type="text" id="sound-invite-study-custom-url" placeholder="可填自定义URL（留空用内置）" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;">
+                                        <button id="upload-sound-invite-study-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;" title="上传本地音频文件"><i class="fas fa-upload"></i></button>
+                                        <input type="file" id="upload-sound-invite-study-file" accept="audio/mp3,audio/mpeg,audio/wav,audio/ogg,audio/*" style="display:none;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">陪我工作邀请音效</div>
+                                    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                                        <select id="sound-invite-work-preset" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;font-family:var(--font-family);">
+                                            <option value="mute">无音效</option>
+                                            <option value="default">内置音效</option>
+                                        </select>
+                                        <button id="test-sound-invite-work-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;"><i class="fas fa-play"></i> 试听</button>
+                                    </div>
+                                    <div style="display:flex;gap:6px;align-items:center;">
+                                        <input type="text" id="sound-invite-work-custom-url" placeholder="可填自定义URL（留空用内置）" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;">
+                                        <button id="upload-sound-invite-work-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;" title="上传本地音频文件"><i class="fas fa-upload"></i></button>
+                                        <input type="file" id="upload-sound-invite-work-file" accept="audio/mp3,audio/mpeg,audio/wav,audio/ogg,audio/*" style="display:none;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">陪我运动邀请音效</div>
+                                    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                                        <select id="sound-invite-exercise-preset" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;font-family:var(--font-family);">
+                                            <option value="mute">无音效</option>
+                                            <option value="default">内置音效</option>
+                                        </select>
+                                        <button id="test-sound-invite-exercise-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;"><i class="fas fa-play"></i> 试听</button>
+                                    </div>
+                                    <div style="display:flex;gap:6px;align-items:center;">
+                                        <input type="text" id="sound-invite-exercise-custom-url" placeholder="可填自定义URL（留空用内置）" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;">
+                                        <button id="upload-sound-invite-exercise-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;" title="上传本地音频文件"><i class="fas fa-upload"></i></button>
+                                        <input type="file" id="upload-sound-invite-exercise-file" accept="audio/mp3,audio/mpeg,audio/wav,audio/ogg,audio/*" style="display:none;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">陪我睡觉邀请音效</div>
+                                    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                                        <select id="sound-invite-sleep-preset" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;font-family:var(--font-family);">
+                                            <option value="mute">无音效</option>
+                                            <option value="default">内置音效</option>
+                                        </select>
+                                        <button id="test-sound-invite-sleep-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;"><i class="fas fa-play"></i> 试听</button>
+                                    </div>
+                                    <div style="display:flex;gap:6px;align-items:center;">
+                                        <input type="text" id="sound-invite-sleep-custom-url" placeholder="可填自定义URL（留空用内置）" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;">
+                                        <button id="upload-sound-invite-sleep-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;" title="上传本地音频文件"><i class="fas fa-upload"></i></button>
+                                        <input type="file" id="upload-sound-invite-sleep-file" accept="audio/mp3,audio/mpeg,audio/wav,audio/ogg,audio/*" style="display:none;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">视频通话邀请音效</div>
+                                    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                                        <select id="sound-invite-videocall-preset" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;font-family:var(--font-family);">
+                                            <option value="mute">无音效</option>
+                                            <option value="default">内置音效</option>
+                                        </select>
+                                        <button id="test-sound-invite-videocall-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;"><i class="fas fa-play"></i> 试听</button>
+                                    </div>
+                                    <div style="display:flex;gap:6px;align-items:center;">
+                                        <input type="text" id="sound-invite-videocall-custom-url" placeholder="可填自定义URL（留空用内置）" style="flex:1;padding:7px 10px;border:1px solid var(--border-color);border-radius:8px;font-size:12px;background:var(--primary-bg);color:var(--text-primary);outline:none;">
+                                        <button id="upload-sound-invite-videocall-btn" class="modal-btn modal-btn-secondary" style="padding:6px 10px;font-size:12px;white-space:nowrap;" title="上传本地音频文件"><i class="fas fa-upload"></i></button>
+                                        <input type="file" id="upload-sound-invite-videocall-file" accept="audio/mp3,audio/mpeg,audio/wav,audio/ogg,audio/*" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="cs-panel" id="cs-panel-display">
                     <p class="cs-group-label">界面模式</p>
@@ -2120,7 +2203,6 @@
                     <p style="text-align: center; margin-bottom: 15px;">支持二改二传，感谢使用！</p>
                     <li style="text-align: center; font-size: 1.1em; color: #8A2BE2; list-style: none; margin: 5px 0;"><b>反对性别暴力</b></li>
                     <li style="text-align: center; font-size: 1.1em; color: #8A2BE2; list-style: none; margin: 5px 0;"><b>尊重不该是奢求,安全必须是底线</b></li>
-                    <p style="text-align: center; margin-top: 15px; color: var(--text-secondary);">二改：小红书 @滚筒洗衣机 (962433799)</p>
                 </div>
             </div>
             <div class="modal-buttons" style="margin-top: 20px;">
